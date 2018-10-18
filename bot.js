@@ -13,7 +13,7 @@ function forEachObject(obj, func) {
 client.on("ready", () => {
     var guild;
     while (!guild)
-        guild = client.guilds.find("name", "Royal Network®")
+        guild = client.guilds.find("name", "FiveStore✍")
     guild.fetchInvites().then((data) => {
         data.forEach((Invite, key, map) => {
             var Inv = Invite.code;
@@ -33,7 +33,7 @@ client.on("guildMemberAdd", (member) => {
     console.log('made it till here!');
     var guild;
     while (!guild)
-        guild = client.guilds.find("name", "Royal Network®")
+        guild = client.guilds.find("name", "FiveStore✍")
     guild.fetchInvites().then((data) => {
         data.forEach((Invite, key, map) => {
             var Inv = Invite.code;
@@ -365,7 +365,6 @@ client.on('message', message => {
                 var bc = new Discord.RichEmbed()
                 .addField('» السيرفر :', `${message.guild.name}`)
                 .addField(' » الرسالة : ', args)
-                .setImage('https://cdn.discordapp.com/attachments/447451833447874591/498498907161100298/aghfh.png')
                 .setColor('RANDOM')
                 // m.send(`[${m}]`);
                 m.send(`${m}`,{embed: bc});
